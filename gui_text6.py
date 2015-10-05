@@ -74,11 +74,6 @@ class GridDemo( Frame ):
         self.label5.grid( row = 7, column = 5, sticky = W )
 
 
-        # self.rowconfigure( 1, weight = 1 )
-        # self.columnconfigure( 1, weight = 1 )
-
-
-
 
 def main():
     GridDemo().mainloop()

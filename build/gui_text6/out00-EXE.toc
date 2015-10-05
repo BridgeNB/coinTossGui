@@ -1,0 +1,9 @@
+('/Users/zhengyangqiao/PycharmProjects/coin_toss_gui/dist/gui_text6',
+ False,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1443638305)

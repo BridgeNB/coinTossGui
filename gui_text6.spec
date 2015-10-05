@@ -7,19 +7,14 @@ a = Analysis(['gui_text6.py'],
 pyz = PYZ(a.pure)
 exe = EXE(pyz,
           a.scripts,
-          exclude_binaries=True,
+          a.binaries,
+          a.zipfiles,
+          a.datas,
           name='gui_text6',
           debug=False,
           strip=None,
           upx=True,
           console=False )
-coll = COLLECT(exe,
-               a.binaries,
-               a.zipfiles,
-               a.datas,
-               strip=None,
-               upx=True,
-               name='gui_text6')
-app = BUNDLE(coll,
+app = BUNDLE(exe,
              name='gui_text6.app',
              icon=None)
